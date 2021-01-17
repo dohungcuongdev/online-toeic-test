@@ -34,7 +34,9 @@ export default {
   },
   data() {
     return {
-      testData: {},//declare an object
+      testData: {
+        parts: {}
+      },//declare an object
       audioStyle: ''//declare a string
     };
   },
