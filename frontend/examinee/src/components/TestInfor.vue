@@ -38,7 +38,7 @@ export default {
   },
   methods: {
       initData(testId) {
-        if (this.$route.name == "test" && testId != null) {
+        if (this.$route.name == "test" || this.$route.name == "test-achievement" && testId != null) {
           axios.get(`${process.env.API_URL}/test-information/${testId}`).then(response => {
             console.log(response.data);
             if(this.$route.params.achievementId == null) {
